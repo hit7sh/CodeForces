@@ -17,7 +17,7 @@ void solve() {
         	if (t == 1) to = j + ceil_div(x, 1e5);
         	else to = ceil_div(j * x, 1e5);
 
-            if (possible[j] + 1 <= y && to <= M)
+            if (possible[j] + 1 <= y && to <= M) // number of moves <= y and destination <= M
                 possible[to] = min(possible[to], possible[j] + 1);
     	}
 
