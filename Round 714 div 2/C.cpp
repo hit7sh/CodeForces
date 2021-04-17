@@ -21,3 +21,13 @@ void init() {
 		}
 	}
 }
+
+void solve() {
+	ll n, m;
+	cin >> n >> m;
+	ll ans = 0;
+	do ans = add(ans, steps[n % 10][m]); while (n && (n /= 10));
+	print(ans);
+	// dbg(steps[2][1]);
+}
+ 
