@@ -112,7 +112,7 @@ void solve(){
 	rep(i,0,q){
 		int x,y;
 		cin >> x >> y;
-		int ans = dis[x] + dis[y] - dis[lca(x,y)];
+		int ans = dis[x] + dis[y] - 2 * dis[lca(x,y)];
 		// cout << lca(x,y) << " ";
 		for(auto &dis:val){
 			amin(ans,dis[x] + dis[y]);
